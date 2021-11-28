@@ -1,5 +1,6 @@
 const SerialPort = require('serialport');
 const Readline = require('@serialport/parser-readline');
+//Choose your serial port!
 const port = new SerialPort('COM7', { baudRate: 115200 });
 const parser = port.pipe(new Readline({ delimiter: '\n' }));
 const StartCMD = String.fromCharCode(1);
