@@ -1,5 +1,5 @@
 # This is the name of the workflow, visible on GitHub UI.
-name: test
+name: SerialArdu
 
 # Here we tell GitHub to run the workflow when a commit
 # is pushed or a Pull Request is opened.
@@ -11,7 +11,7 @@ on: [push, pull_request]
 # will produce.
 jobs:
   # This is the name of the job - can be whatever.
-  test-matrix:
+  SerialArdu-build:
 
     # Here we tell GitHub that the jobs must be determined
     # dynamically depending on a matrix configuration.
